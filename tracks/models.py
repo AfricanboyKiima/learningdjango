@@ -31,7 +31,7 @@ class Track(models.Model):
     length = models.IntegerField(null=True)#optional or nullable with an integer datatype hence numbers only
     count = models.IntegerField(null=True)#optional or nullablee with an integer datatype hence numbers only
     album= models.ForeignKey('Album', on_delete=models.CASCADE)
-    gendre = models.ForeignKey('Genre', on_delete=models.SET_NULL,null= True)
+    genre = models.ForeignKey('Genre', on_delete=models.SET_NULL,null= True)
     
     """string to display the Track object"""
     def __str__(self):
