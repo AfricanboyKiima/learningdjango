@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'gview.apps.GviewConfig',
     'tracks.apps.TracksConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
