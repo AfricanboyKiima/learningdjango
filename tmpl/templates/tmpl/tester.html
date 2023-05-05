@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Hello world</title>
+    </head>
+    <body>
+        <p>Dear customer,your password is {{data.me.password}}</p>
+        <ul>
+            {% for x in cars%}
+            <li>{{x}}</li>
+            {% endfor %}
+        </ul>
+        {% if health %}
+        <p>Here is a list of nutritions {{health|safe}}</p>
+        {%else%}
+        <p>No list of nutritions was found</p>
+        {% endif %}
+        <p>Dear customer your password is {{data.me.password}}</p>
+    </body>
+</html>

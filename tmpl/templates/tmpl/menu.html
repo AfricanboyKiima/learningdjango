@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>A simple page</title>
+    </head>
+    <body> 
+        <h1 style="font-family:fantasy; font-weight: bold; ">Today's tongue twister :</h1>
+        <h2 style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">{{word}}</h2>
+<ol>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(50, 150, 20);">List of foods</h1>
+
+    {% for x in food%}
+   <li>{{x}}</li>
+   {% endfor %}
+   </ol>
+   
+   <ol>
+    <h1 style="color: rgb(105,250,0); font-family: 'Courier New', Courier, monospace;">List of drinks</h1>
+
+       {% for y in drinks%}
+       <li>{{y}}</li>
+       {% endfor %}
+   </ol>
+   <p style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">PLEASE COME BACK AGAIN AND TEST THE DIFFERENCE</p>
+   
+    </body>
+</html>
+

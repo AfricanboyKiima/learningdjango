@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Hello world</title>
+    </head>
+    <body>
+        <ul>
+            {%for x in countries%}
+            <li>{{x}}</li>
+            {% endfor %}
+        </ul>
+        {%if names%}
+        <p>List of names {{names}}</p>
+        <p>Here is the length of the names list {{names|length}}</p>
+        {%else%}
+        <p>The above stated names list doesn't exist</p>
+        {% endif %}
+
+        <p>{{txt|safe}}</p>
+    </body>
+</html>
